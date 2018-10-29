@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+	<rosparam command="load" file="$(find cartpole_tests)/config/cartpole_n1try_params.yaml"/>
+	<node pkg="cartpole_tests" name="RL_Algorithm" type="cartpole_reinforcement_q_learning.py" output="screen"/>
+</launch>
